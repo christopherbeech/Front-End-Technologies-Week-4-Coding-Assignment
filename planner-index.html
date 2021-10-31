@@ -30,6 +30,7 @@
         position: relative;
         z-index: 100;
         left: 0;
+        top: 6.3rem;
     }
     .plannerTitle{
         position: fixed;
@@ -38,10 +39,17 @@
         right: 0;
         top: 0;
     }
-    .myPlanner{
-        margin-top: 6.9rem;
+
+ @media (max-width: 581px){
+    body{
+        background-image: url('/images/pball.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        position: relative;
     }
- 
+ }
     
 </style>
 <body>
@@ -81,7 +89,7 @@
                     </div>
                 </div>
             </div>
-            <table id="list" class="table table-light table-striped ">
+            <table id="list" class="table table-light table-striped  plannerTable">
                 <tr class="text-center">
                     <th>My Task</th>
                     <th>Date Created</th>
